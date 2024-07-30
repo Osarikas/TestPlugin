@@ -1,0 +1,5 @@
+me\osarikas\testPlugin\events\OpenBarrelEvent.class
+me\osarikas\testPlugin\commands\GodCommand.class
+me\osarikas\testPlugin\commands\FeedCommand.class
+me\osarikas\testPlugin\TestPlugin.class
+me\osarikas\testPlugin\events\CreeperExplode.class

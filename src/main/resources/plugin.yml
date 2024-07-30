@@ -1,0 +1,15 @@
+name: TestPlugin
+version: '1.0.0'
+main: me.osarikas.testPlugin.TestPlugin
+api-version: '1.21'
+commands:
+  god:
+    description: God power
+    usage: /<command>
+    permission-message: У тебя нет прав
+  feed:
+    description: Накормить самого себя
+    usage: /<command>
+permissions:
+  testplugin.god:
+    description: Позволяет использовать /god
