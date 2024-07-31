@@ -3,6 +3,7 @@ me\osarikas\testPlugin\commands\SpawnCommand.class
 me\osarikas\testPlugin\commands\FeedCommand.class
 me\osarikas\testPlugin\events\SpawnListener.class
 me\osarikas\testPlugin\events\OpenBarrelEvent.class
+me\osarikas\testPlugin\commands\SetJoinMessageCommand.class
 me\osarikas\testPlugin\commands\SetSpawnCommand.class
 me\osarikas\testPlugin\TestPlugin.class
 me\osarikas\testPlugin\events\CreeperExplode.class

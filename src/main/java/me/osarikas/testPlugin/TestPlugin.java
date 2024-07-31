@@ -1,9 +1,6 @@
 package me.osarikas.testPlugin;
 
-import me.osarikas.testPlugin.commands.FeedCommand;
-import me.osarikas.testPlugin.commands.GodCommand;
-import me.osarikas.testPlugin.commands.SetSpawnCommand;
-import me.osarikas.testPlugin.commands.SpawnCommand;
+import me.osarikas.testPlugin.commands.*;
 import me.osarikas.testPlugin.events.CreeperExplode;
 import me.osarikas.testPlugin.events.OpenBarrelEvent;
 import me.osarikas.testPlugin.events.SpawnListener;
@@ -29,6 +26,7 @@ public final class TestPlugin extends JavaPlugin {
         saveDefaultConfig();
         getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
+        getCommand("setjoinmessage").setExecutor(new SetJoinMessageCommand(this));
 
 
 

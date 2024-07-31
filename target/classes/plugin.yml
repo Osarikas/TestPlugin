@@ -6,18 +6,25 @@ commands:
   god:
     description: God power
     usage: /<command>
-    permission-message: У тебя нет прав
+    permission: testplugin.god
   feed:
     description: Накормить самого себя
     usage: /<command>
   setspawn:
     description: Установить точку спавна
     usage: /<command>
+    permission: testplugin.setspawn
   spawn:
     description: Телепортироваться на точку спавна
     usage: /<command>
+  setjoinmessage:
+    description: Установить сообщение при заходе на сервер. Используйте %player% для получения никнейма игрока
+    usage: /<command>
+    permission: testplugin.setjoinmessage
 permissions:
   testplugin.god:
     description: Позволяет использовать /god
   testplugin.setspawn:
     description: Позволяет использовать /setspawn
+  testplugin.setjoinmessage:
+    description: Позволяет использовать /setjoinmessage

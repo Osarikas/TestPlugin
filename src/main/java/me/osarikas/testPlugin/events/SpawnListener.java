@@ -20,6 +20,11 @@ public class SpawnListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
         Player p = event.getPlayer();
+        String joinMessage = plugin.getConfig().getString("join-message");
+        if(joinMessage != null){
+            joinMessage = joinMessage.replace("%player%",p.getDisplayName());
+            event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', joinMessage));
+        }
         if(!event.getPlayer().hasPlayedBefore()){
             Location spawn = plugin.getConfig().getLocation("spawn");
             if(spawn != null){
