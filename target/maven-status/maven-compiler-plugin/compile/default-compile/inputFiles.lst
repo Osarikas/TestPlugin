@@ -1,5 +1,8 @@
 D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\commands\FeedCommand.java
 D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\commands\GodCommand.java
+D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\commands\SetSpawnCommand.java
+D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\commands\SpawnCommand.java
 D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\events\CreeperExplode.java
 D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\events\OpenBarrelEvent.java
+D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\events\SpawnListener.java
 D:\Java\JavaPlugins\TestPlugin\src\main\java\me\osarikas\testPlugin\TestPlugin.java

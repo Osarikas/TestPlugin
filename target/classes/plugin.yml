@@ -10,6 +10,14 @@ commands:
   feed:
     description: Накормить самого себя
     usage: /<command>
+  setspawn:
+    description: Установить точку спавна
+    usage: /<command>
+  spawn:
+    description: Телепортироваться на точку спавна
+    usage: /<command>
 permissions:
   testplugin.god:
     description: Позволяет использовать /god
+  testplugin.setspawn:
+    description: Позволяет использовать /setspawn

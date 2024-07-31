@@ -2,8 +2,11 @@ package me.osarikas.testPlugin;
 
 import me.osarikas.testPlugin.commands.FeedCommand;
 import me.osarikas.testPlugin.commands.GodCommand;
+import me.osarikas.testPlugin.commands.SetSpawnCommand;
+import me.osarikas.testPlugin.commands.SpawnCommand;
 import me.osarikas.testPlugin.events.CreeperExplode;
 import me.osarikas.testPlugin.events.OpenBarrelEvent;
+import me.osarikas.testPlugin.events.SpawnListener;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -18,8 +21,14 @@ public final class TestPlugin extends JavaPlugin {
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new OpenBarrelEvent(), this);
 //        getServer().getPluginManager().registerEvents(new CreeperExplode(), this);
+        getServer().getPluginManager().registerEvents(new SpawnListener(this), this);
         getCommand("god").setExecutor(new GodCommand());
         getCommand("feed").setExecutor(new FeedCommand());
+
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
+        getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
+        getCommand("spawn").setExecutor(new SpawnCommand(this));
 
 
 
